@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 	init_cache(&cache);
 
 	printf("bench(1)/test(2)\n");
-	
+
 	int answ;
 	scanf("%d", &answ);
 
@@ -80,8 +80,6 @@ int main(int argc, char const *argv[])
 			printf("%lu\n", insert_t / 1);
 			printf("%lu\n", find_t / 1);
 			printf("%lu\n\n", delete_t / 1);
-
-			clear_cache(&cache);
 		}
 	}
 
