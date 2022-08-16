@@ -52,4 +52,10 @@ typedef struct{
 	unsigned int capacity;
 }Cache;
 
+int insert_cache(Cache* cache, size_t key, void* info);
+const void* find_cache(Cache* cache, size_t key);
+int delete_cache(Cache* cache, size_t key);
+void print_cache(Cache cache);
+void clear_cache(Cache* cache);
+
 #endif
